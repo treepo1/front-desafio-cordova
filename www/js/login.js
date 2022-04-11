@@ -8,7 +8,7 @@ function getData(){
     name: nome,
     pass: password,
 })}).then((resposta) => resposta.json()).
-then((data) => {if(data.error == ''){alert('Logado com sucesso')}else{
+then((data) => {if(data.error == '' || !data.error){alert('Logado com sucesso')}else{
     alert("Usuário não encontrado ou credenciais não batem")
 }})
 }
