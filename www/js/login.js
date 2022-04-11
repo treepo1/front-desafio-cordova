@@ -1,7 +1,7 @@
 var nome = document.getElementById("username").value
 var password = document.getElementById("userpassword").value
 function getData(){
-    fetch('https://desafio-back-cordova.herokuapp.com/api/login', {method: 'POST', headers: {
+    fetch('https://desafio-back-php.herokuapp.com/api/login', {method: 'POST', headers: {
         "Content-Type": "application/json"
     },
  body:JSON.stringify({
